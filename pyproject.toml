@@ -1,0 +1,23 @@
+[project]
+name = "deskar"
+version = "0.1.0"
+description = "Скрипт-парсер"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "opencv-python>=4.13.0.92",
+    "openpyxl>=3.1.5",
+    "pdf2image>=1.17.0",
+    "pillow>=12.1.1",
+    "pytesseract>=0.3.13",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/deskar"]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"src/deskar/py.typed" = "deskar/py.typed"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,17 @@
+{
+  "include": ["src"],
+  "venvPath": ".",
+  "venv": ".venv",
+  "stubPath": "src",
+  "executionEnvironments": [
+    {
+      "root": "src"
+    }
+  ],
+  "reportUnusedCallResult": "none",
+  "reportArgumentType": "none",
+  "reportAny": "none",
+  "reportExplicitAny": "none",
+  "reportUnannotatedClassAttribute": "none",
+  "reportMissingTypeStubs": "none"
+}
